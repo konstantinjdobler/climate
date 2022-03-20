@@ -103,7 +103,7 @@ List<Challenge> challengeMocks = [
       ]),
   Challenge(
       id: '124',
-      title: 'I will offset my next year flights',
+      title: 'I will offset my next year\'s flights',
       description:
           'I fly a lot for my job, so I will personally offset my flying related carbon footprint for a whole year.',
       fundingGoal: 100,
