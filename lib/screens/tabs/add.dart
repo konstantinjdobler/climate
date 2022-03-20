@@ -3,6 +3,7 @@ import 'package:flutter_tags/flutter_tags.dart';
 import 'package:co_you/model/challenges.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:co_you/mainModel.dart' show ApplicationModel;
+import 'package:toggle_switch/toggle_switch.dart';
 
 class Add extends StatefulWidget {
   AddState createState() => AddState();
@@ -85,6 +86,19 @@ class AddState extends State<Add> {
               decoration:
                   InputDecoration(labelText: 'Amount', suffixText: ' 🌳'),
             ),
+            SizedBox(height: _marginBetweenWidgets),
+            Align(
+              alignment: Alignment.center,
+              child: ToggleSwitch(
+                initialLabelIndex: 0,
+                totalSwitches: 2,
+                minWidth: 176.0,
+                labels: ['Challenge yourself', 'Challenge a colleague'],
+                onToggle: (index) {
+                  print('switched to: $index');
+                },
+              ),
+            ),
             SizedBox(height: _marginBetweenWidgets * 1.5),
             Text('Tags'),
             SizedBox(height: _marginBetweenWidgets),
@@ -93,8 +107,6 @@ class AddState extends State<Add> {
               itemBuilder: (int idx) {
                 return _tags[idx];
               },
-              // tags: _tags,
-              // backgroundContainer: Color(0xfffafafa),
               columns: 5, // default 4
               symmetry: false, // default false
             ),

@@ -19,6 +19,7 @@ dependencies:
   scoped_model:
   flutter_tags:
   font_awesome_flutter:
+  toggle_switch: ^1.4.0
 
 dev_dependencies:
   flutter_test:

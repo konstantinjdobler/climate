@@ -81,17 +81,6 @@ List<Challenge> challengeMocks = [
       proof: 'assets/proof-pascal-vegan.jpg',
       tags: ['food', 'environment', 'climate']),
   Challenge(
-      id: '123askdfph',
-      title: 'Inform my team about environmental sustainibility',
-      description:
-          'I will hold a public presentation to elaborate how people can become more sustainable in the day-to-day work life.',
-      fundingGoal: 2,
-      supporters: [
-        Supporter(userMocks[1], 2),
-      ],
-      contestant: userMocks[0],
-      tags: ['work', 'awareness']),
-  Challenge(
       id: '101',
       title: 'I will fix your bug!',
       distance: 'Berlin, 20 km from you',
@@ -127,8 +116,8 @@ List<Challenge> challengeMocks = [
         Supporter(userMocks[7], 50),
       ],
       contestant: userMocks[0],
-      finishedAt: DateTime.now(),
-      proof: 'assets/proof-celery.jpg',
+      // finishedAt: DateTime.now(),
+      // proof: 'assets/proof-celery.jpg',
       tags: ['food', 'funny', 'crazy']),
   Challenge(
       id: 'amkaud',
@@ -187,4 +176,23 @@ List<Challenge> challengeMocks = [
       proof: 'assets/proof-griebnitz.jpg',
       contestant: userMocks[1],
       tags: ['society']),
+  Challenge(
+      id: 'aasssaa',
+      title: 'Name a product, I\'ll give you a climate-friendly alternative',
+      description:
+          'I strongly believe we can be sustainable if we just have the will to do so',
+      fundingGoal: 15,
+      contestant: userMocks[6],
+      supporters: [Supporter(userMocks[1], 3), Supporter(userMocks[3], 11)],
+      tags: ['climate', 'awareness']),
+  Challenge(
+      id: '123askdfph',
+      title: 'Hold a presentation for climate awareness',
+      description:
+          'I challenge you hold a presentation in public to elaborate how people can become more sustainable in the day-to-day work life. Let\'s change the minds of people to enable a greener future!',
+      fundingGoal: 4,
+      supporters: [],
+      contestant: userMocks[4],
+      corporate: true,
+      tags: ['Challenge for YOU', 'awareness']),
 ];
