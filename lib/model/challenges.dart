@@ -39,7 +39,7 @@ class Challenge {
     this.tags,
     this.contestant,
     this.supporters,
-    this.distance,
+    this.distance = "",
     this.fundingGoal,
     this.description,
     this.createdAt,
@@ -53,7 +53,6 @@ List<Challenge> challengeMocks = [
   Challenge(
       id: '123',
       title: 'Calculate your Carbon Footprint',
-      distance: 'Corporate Challenge',
       description:
           'SAP challenges YOU!\n\nCalculate your Carbon Footprint for one week. You can use our Product Footprint Management APIs to calculate the footprint of consumer products. Post a photo of your result as proof!',
       fundingGoal: 10,
@@ -67,7 +66,6 @@ List<Challenge> challengeMocks = [
   Challenge(
       id: '100',
       title: 'I will go vegan for 10 days',
-      distance: 'Potsdam, 10km from you ',
       description:
           'I love meat, but I also would do anything for mother nature ... almost everything, 10 days are max for me. I hope I wan\'t starve!',
       fundingGoal: 40,
@@ -83,7 +81,6 @@ List<Challenge> challengeMocks = [
   Challenge(
       id: '101',
       title: 'I will fix your bug!',
-      distance: 'Berlin, 20 km from you',
       description:
           'You are to embarassed asking your colleagues for help and have spend already hours finding a bug you produced. No problem, I\'m your guy!',
       fundingGoal: 10,
@@ -93,7 +90,6 @@ List<Challenge> challengeMocks = [
   Challenge(
       id: '102',
       title: 'I will bike to work for a whole month!',
-      distance: 'Berlin, 12 km from you ',
       description: 'Sun or rain ... I will bike to work.',
       fundingGoal: 12,
       contestant: userCollection[4],
@@ -121,20 +117,17 @@ List<Challenge> challengeMocks = [
       tags: ['climate', 'environment']),
   Challenge(
       id: 'amkaud',
-      title: 'Cold shower',
-      distance: 'Berlin, 15km from you',
+      title: 'Cold shower in the morning',
       description:
           'What is better than a freezing cold shower in the morning to wake up ... and of course for the climate',
       fundingGoal: 10,
       contestant: userCollection[3],
       supporters: [Supporter(userCollection[0], 10)],
       finishedAt: DateTime.now(),
-      proof: 'assets/proof-soup.jpg',
-      tags: ['voluntary', 'food', 'helping']),
+      tags: ['climate']),
   Challenge(
       id: 'aaaa',
       title: 'I will give out Free Hugs',
-      distance: 'Nearby',
       description: 'Because everyone needs a hug',
       fundingGoal: 15,
       contestant: userCollection[4],
@@ -147,8 +140,7 @@ List<Challenge> challengeMocks = [
       tags: ['friendship']),
   Challenge(
       id: '12bbbb4',
-      title: 'I will run marathon',
-      distance: 'Nearby',
+      title: 'I will run a marathon',
       description: 'This is awesome. Why not?',
       fundingGoal: 20,
       contestant: userCollection[6],
@@ -164,7 +156,6 @@ List<Challenge> challengeMocks = [
   Challenge(
       id: '123',
       title: 'I WILL JUMP into Griebnitzsee',
-      distance: 'Nearby',
       description:
           'I\'ve been hacking all day at the HPI Hackathon and need some refreshment. For 10 bucks I\'ll jump into the Griebnitzsee!!!',
       fundingGoal: 10,
