@@ -58,10 +58,10 @@ List<Challenge> challengeMocks = [
           'SAP challenges YOU!\n\nCalculate your Carbon Footprint for one week. You can use our Product Footprint Management APIs to calculate the footprint of consumer products. Post a photo of your result as proof!',
       fundingGoal: 10,
       supporters: [
-        Supporter(userMocks[4], 4),
-        Supporter(userMocks[3], 1),
+        Supporter(userCollection[4], 4),
+        Supporter(userCollection[3], 1),
       ],
-      contestant: userMocks[7],
+      contestant: userCollection[7],
       tags: ['SAP challenges YOU!'],
       corporate: true),
   Challenge(
@@ -71,12 +71,12 @@ List<Challenge> challengeMocks = [
       description:
           'I love meat, but I also would do anything for mother nature ... almost everything, 10 days are max for me. I hope I wan\'t starve!',
       fundingGoal: 40,
-      contestant: userMocks[4],
+      contestant: userCollection[4],
       finishedAt: DateTime.now(),
       supporters: [
-        Supporter(userMocks[4], 10),
-        Supporter(userMocks[0], 15),
-        Supporter(userMocks[2], 15),
+        Supporter(userCollection[4], 10),
+        Supporter(userCollection[0], 15),
+        Supporter(userCollection[2], 15),
       ],
       proof: 'assets/proof-pascal-vegan.jpg',
       tags: ['food', 'environment', 'climate']),
@@ -87,7 +87,7 @@ List<Challenge> challengeMocks = [
       description:
           'You are to embarassed asking your colleagues for help and have spend already hours finding a bug you produced. No problem, I\'m your guy!',
       fundingGoal: 10,
-      contestant: userMocks[1],
+      contestant: userCollection[1],
       supporters: [],
       tags: ['work']),
   Challenge(
@@ -96,10 +96,10 @@ List<Challenge> challengeMocks = [
       distance: 'Berlin, 12 km from you ',
       description: 'Sun or rain ... I will bike to work.',
       fundingGoal: 12,
-      contestant: userMocks[4],
+      contestant: userCollection[4],
       supporters: [
-        Supporter(userMocks[1], 2),
-        Supporter(userMocks[2], 3),
+        Supporter(userCollection[1], 2),
+        Supporter(userCollection[2], 3),
       ],
       tags: [
         'sport',
@@ -112,13 +112,13 @@ List<Challenge> challengeMocks = [
           'I fly a lot for my job, so I will personally offset my flying related carbon footprint for a whole year.',
       fundingGoal: 100,
       supporters: [
-        Supporter(userMocks[3], 10),
-        Supporter(userMocks[7], 50),
+        Supporter(userCollection[3], 10),
+        Supporter(userCollection[7], 50),
       ],
-      contestant: userMocks[0],
+      contestant: userCollection[0],
       // finishedAt: DateTime.now(),
       // proof: 'assets/proof-celery.jpg',
-      tags: ['food', 'funny', 'crazy']),
+      tags: ['climate', 'environment']),
   Challenge(
       id: 'amkaud',
       title: 'Cold shower',
@@ -126,8 +126,8 @@ List<Challenge> challengeMocks = [
       description:
           'What is better than a freezing cold shower in the morning to wake up ... and of course for the climate',
       fundingGoal: 10,
-      contestant: userMocks[3],
-      supporters: [Supporter(userMocks[0], 10)],
+      contestant: userCollection[3],
+      supporters: [Supporter(userCollection[0], 10)],
       finishedAt: DateTime.now(),
       proof: 'assets/proof-soup.jpg',
       tags: ['voluntary', 'food', 'helping']),
@@ -137,11 +137,11 @@ List<Challenge> challengeMocks = [
       distance: 'Nearby',
       description: 'Becasue everyone needs a hug',
       fundingGoal: 15,
-      contestant: userMocks[4],
+      contestant: userCollection[4],
       supporters: [
-        Supporter(userMocks[2], 1),
-        Supporter(userMocks[1], 3),
-        Supporter(userMocks[3], 11)
+        Supporter(userCollection[2], 1),
+        Supporter(userCollection[1], 3),
+        Supporter(userCollection[3], 11)
       ],
       finishedAt: DateTime.now(),
       tags: ['friendship']),
@@ -151,11 +151,11 @@ List<Challenge> challengeMocks = [
       distance: 'Nearby',
       description: 'this is awesome',
       fundingGoal: 20,
-      contestant: userMocks[3],
+      contestant: userCollection[3],
       supporters: [
-        Supporter(userMocks[4], 2),
-        Supporter(userMocks[0], 5),
-        Supporter(userMocks[1], 10),
+        Supporter(userCollection[4], 2),
+        Supporter(userCollection[0], 5),
+        Supporter(userCollection[1], 10),
       ],
       tags: [
         'funny',
@@ -169,12 +169,12 @@ List<Challenge> challengeMocks = [
           'I\'ve been hacking all day at the HPI Hackathon and need some refreshment. For 10 bucks I\'ll jump into the Griebnitzsee!!!',
       fundingGoal: 10,
       supporters: [
-        Supporter(userMocks[0], 9),
-        Supporter(userMocks[4], 1),
+        Supporter(userCollection[0], 9),
+        Supporter(userCollection[4], 1),
       ],
       finishedAt: DateTime.now(),
       proof: 'assets/proof-griebnitz.jpg',
-      contestant: userMocks[1],
+      contestant: userCollection[1],
       tags: ['society']),
   Challenge(
       id: 'aasssaa',
@@ -182,8 +182,8 @@ List<Challenge> challengeMocks = [
       description:
           'I strongly believe we can be sustainable if we just have the will to do so',
       fundingGoal: 15,
-      contestant: userMocks[6],
-      supporters: [Supporter(userMocks[1], 3), Supporter(userMocks[3], 11)],
+      contestant: userCollection[6],
+      supporters: [Supporter(userCollection[1], 3), Supporter(userCollection[3], 11)],
       tags: ['climate', 'awareness']),
   Challenge(
       id: '123askdfph',
@@ -192,7 +192,7 @@ List<Challenge> challengeMocks = [
           'I challenge you hold a presentation in public to elaborate how people can become more sustainable in the day-to-day work life. Let\'s change the minds of people to enable a greener future!',
       fundingGoal: 4,
       supporters: [],
-      contestant: userMocks[4],
+      contestant: userCollection[4],
       corporate: true,
       tags: ['Challenge for YOU', 'awareness']),
 ];

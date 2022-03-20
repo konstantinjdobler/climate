@@ -22,7 +22,7 @@ class User {
   });
 }
 
-List<User> userMocks = [
+List<User> userCollection = [
   User(
       id: '1',
       name: 'Konstantin',

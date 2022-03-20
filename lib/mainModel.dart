@@ -2,7 +2,7 @@ import 'dart:collection';
 
 import 'package:scoped_model/scoped_model.dart';
 
-import 'package:co_you/model/users.dart' show userMocks, User;
+import 'package:co_you/model/users.dart' show userCollection, User;
 import 'package:co_you/model/projects.dart' show projectMocks, Project;
 import 'package:co_you/model/challenges.dart'
     show challengeMocks, Challenge, Supporter;
@@ -16,7 +16,7 @@ class ApplicationModel extends Model {
 
   void loadData() {
     _challenges = challengeMocks;
-    _users = userMocks;
+    _users = userCollection;
     _user = users[0];
     _projects = projectMocks;
     notifyListeners();
