@@ -135,7 +135,7 @@ List<Challenge> challengeMocks = [
       id: 'aaaa',
       title: 'I will give out Free Hugs',
       distance: 'Nearby',
-      description: 'Becasue everyone needs a hug',
+      description: 'Because everyone needs a hug',
       fundingGoal: 15,
       contestant: userCollection[4],
       supporters: [
@@ -147,19 +147,19 @@ List<Challenge> challengeMocks = [
       tags: ['friendship']),
   Challenge(
       id: '12bbbb4',
-      title: 'I will embarass myself in public',
+      title: 'I will run marathon',
       distance: 'Nearby',
-      description: 'this is awesome',
+      description: 'This is awesome. Why not?',
       fundingGoal: 20,
-      contestant: userCollection[3],
+      contestant: userCollection[6],
       supporters: [
         Supporter(userCollection[4], 2),
         Supporter(userCollection[0], 5),
         Supporter(userCollection[1], 10),
       ],
       tags: [
-        'funny',
-        'crazy'
+        'sports',
+        'personal goals'
       ]),
   Challenge(
       id: '123',
@@ -183,8 +183,28 @@ List<Challenge> challengeMocks = [
           'I strongly believe we can be sustainable if we just have the will to do so',
       fundingGoal: 15,
       contestant: userCollection[6],
-      supporters: [Supporter(userCollection[1], 3), Supporter(userCollection[3], 11)],
-      tags: ['climate', 'awareness']),
+      supporters: [
+        Supporter(userCollection[1], 3),
+        Supporter(userCollection[3], 11)
+      ],
+      tags: [
+        'climate',
+        'awareness'
+      ]),
+  Challenge(
+      id: 'aasssaa',
+      title: 'Zero food waste for a week',
+      description: 'We need to be conscious of our resource usage',
+      fundingGoal: 12,
+      contestant: userCollection[5],
+      supporters: [
+        Supporter(userCollection[1], 3),
+        Supporter(userCollection[3], 4)
+      ],
+      tags: [
+        'food',
+        'awareness'
+      ]),
   Challenge(
       id: '123askdfph',
       title: 'Hold a presentation for climate awareness',
