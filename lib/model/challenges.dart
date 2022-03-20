@@ -67,7 +67,7 @@ List<Challenge> challengeMocks = [
       id: '100',
       title: 'I will go vegan for 10 days',
       description:
-          'I love meat, but I also would do anything for mother nature ... almost everything, 10 days are max for me. I hope I wan\'t starve!',
+          'I love meat, but I also would do anything for mother nature ... almost everything, 10 days are max for me. I hope I won\'t starve!',
       fundingGoal: 40,
       contestant: userCollection[4],
       finishedAt: DateTime.now(),
