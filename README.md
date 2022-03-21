@@ -1,6 +1,8 @@
 # climate
 
-Project for the HPI Hackathon 2022
+Entry for the HPI Hackathon 2022
+
+Devpost project: https://devpost.com/software/coyou-saving-co2-starts-with-you
 
 ## Getting Started
 
