@@ -76,7 +76,7 @@ List<Challenge> challengeMocks = [
         Supporter(userCollection[0], 15),
         Supporter(userCollection[2], 15),
       ],
-      proof: 'assets/proof-pascal-vegan.jpg',
+      proof: 'assets/proof-pascal-vegan.jpeg',
       tags: ['food', 'environment', 'climate']),
   Challenge(
       id: '101',
